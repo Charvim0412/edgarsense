@@ -10,19 +10,69 @@
     "expected_item": "3"
   },
   {
-    "question": "What does Microsoft say about datacenter capacity?",
-    "expected_ticker": "MSFT",
-    "expected_item": "1"
-  },
-  {
     "question": "What are Apple's cybersecurity risk disclosures?",
     "expected_ticker": "AAPL",
     "expected_item": "1c"
   },
   {
+    "question": "What controls and procedures does Apple have in place?",
+    "expected_ticker": "AAPL",
+    "expected_item": "9a"
+  },
+  {
+    "question": "What does Microsoft say about datacenter capacity?",
+    "expected_ticker": "MSFT",
+    "expected_item": "1"
+  },
+  {
+    "question": "What does Microsoft disclose about market risk?",
+    "expected_ticker": "MSFT",
+    "expected_item": "7a"
+  },
+  {
     "question": "What does JPMorgan discuss regarding market risk?",
     "expected_ticker": "JPM",
-    "expected_item": null
+    "expected_item": "7a"
+  },
+  {
+    "question": "What are JPMorgan's main risk factors?",
+    "expected_ticker": "JPM",
+    "expected_item": "1a"
+  },
+  {
+    "question": "What does Amazon say about its business segments?",
+    "expected_ticker": "AMZN",
+    "expected_item": "1"
+  },
+  {
+    "question": "What does Amazon's MD&A section discuss about financial results?",
+    "expected_ticker": "AMZN",
+    "expected_item": "7"
+  },
+  {
+    "question": "What cybersecurity risks does Google disclose?",
+    "expected_ticker": "GOOGL",
+    "expected_item": "1c"
+  },
+  {
+    "question": "What legal proceedings is Google involved in?",
+    "expected_ticker": "GOOGL",
+    "expected_item": "3"
+  },
+  {
+    "question": "What does Meta say about its properties and facilities?",
+    "expected_ticker": "META",
+    "expected_item": "2"
+  },
+  {
+    "question": "What risk factors does NVIDIA disclose about foreign jurisdictions?",
+    "expected_ticker": "NVDA",
+    "expected_item": "9c"
+  },
+  {
+    "question": "What does Tesla's business section describe?",
+    "expected_ticker": "TSLA",
+    "expected_item": "1"
   },
   {
     "question": "What is Bitcoin mining strategy according to the filings?",
