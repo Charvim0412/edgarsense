@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What does AAPL identify as a key risk factor related to supply chain?",
+    "expected_ticker": "AAPL",
+    "expected_item": "1a",
+    "notes": "fill in expected phrase/fact after reading the ingested filing"
+  },
+  {
+    "question": "What is Bitcoin mining strategy according to the filings?",
+    "expected_ticker": null,
+    "expected_item": null,
+    "notes": "negative case - model should say info not found"
+  }
+]

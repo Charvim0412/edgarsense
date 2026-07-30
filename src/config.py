@@ -17,3 +17,4 @@ DATA_RAW = PROJECT_ROOT / "data" / "raw"
 DATA_PROCESSED = PROJECT_ROOT / "data" / "processed"
 DATA_RAW.mkdir(parents=True, exist_ok=True)
 DATA_PROCESSED.mkdir(parents=True, exist_ok=True)
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
