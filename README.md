@@ -1,5 +1,7 @@
 # EdgarSense
 
+![Architecture diagram](docs/architecture.svg)
+
 Multi-agent RAG system that answers analyst-grade questions over SEC filings -
 built to explore what production-grade RAG looks like beyond a basic demo:
 hybrid retrieval, a critic agent that verifies claims before returning them,
