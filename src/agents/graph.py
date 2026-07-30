@@ -2,7 +2,7 @@ import re
 from typing import TypedDict, List, Optional
 from langgraph.graph import StateGraph, END
 
-from src.retrieval.search import search
+from src.retrieval.hybrid_search import hybrid_search
 from src.generation.llm_client import generate_answer
 
 KNOWN_TICKERS = ["AAPL", "MSFT", "TSLA", "JPM", "AMZN", "GOOGL", "META", "NVDA"]
@@ -39,15 +39,15 @@ def retrieve_node(state: GraphState) -> GraphState:
     excerpts = []
 
     if state["route"] == "general":
-        results = search(state["question"], top_k=6 + retry_boost)
-        for ticker, item_number, heading, text, distance in results:
-            excerpts.append({"ticker": ticker, "item_number": item_number, "heading": heading, "text": text})
+        results = hybrid_search(state["question"], top_k=6 + retry_boost)
+        for r in results:
+            excerpts.append(r)
     else:
         per_ticker_k = (5 if state["route"] == "single" else 3) + retry_boost
         for ticker in state["tickers"]:
-            results = search(state["question"], top_k=per_ticker_k, ticker=ticker)
-            for t, item_number, heading, text, distance in results:
-                excerpts.append({"ticker": t, "item_number": item_number, "heading": heading, "text": text})
+            results = hybrid_search(state["question"], top_k=per_ticker_k, ticker=ticker)
+            for r in results:
+                excerpts.append(r)
 
     return {**state, "excerpts": excerpts}
 
