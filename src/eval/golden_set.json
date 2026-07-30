@@ -2,13 +2,32 @@
   {
     "question": "What does AAPL identify as a key risk factor related to supply chain?",
     "expected_ticker": "AAPL",
-    "expected_item": "1a",
-    "notes": "fill in expected phrase/fact after reading the ingested filing"
+    "expected_item": "1a"
+  },
+  {
+    "question": "What did Apple say about litigation and legal proceedings?",
+    "expected_ticker": "AAPL",
+    "expected_item": "3"
+  },
+  {
+    "question": "What does Microsoft say about datacenter capacity?",
+    "expected_ticker": "MSFT",
+    "expected_item": "1"
+  },
+  {
+    "question": "What are Apple's cybersecurity risk disclosures?",
+    "expected_ticker": "AAPL",
+    "expected_item": "1c"
+  },
+  {
+    "question": "What does JPMorgan discuss regarding market risk?",
+    "expected_ticker": "JPM",
+    "expected_item": null
   },
   {
     "question": "What is Bitcoin mining strategy according to the filings?",
     "expected_ticker": null,
     "expected_item": null,
-    "notes": "negative case - model should say info not found"
+    "notes": "negative case - no company should discuss this, tests that retrieval doesn't force a false match"
   }
 ]
