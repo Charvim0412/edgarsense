@@ -21,7 +21,7 @@ exactly the failure mode you can least afford in financial research.
 - **Hybrid retrieval** - dense vector search (pgvector) combined with BM25
   keyword search, merged via Reciprocal Rank Fusion. Dense-only search
   reliably missed specific supply-chain risk language in testing; hybrid
-  search surfaced it. See docs/eval-report.md.
+  search surfaced it. See the [full eval report](docs/eval-report.md).
 - **Multi-agent pipeline (LangGraph)** - a state machine that routes the
   query, retrieves, drafts an answer, then runs a critic agent that
   checks every numeric claim in the draft against the retrieved source text.
